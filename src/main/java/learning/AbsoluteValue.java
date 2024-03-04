@@ -1,19 +1,23 @@
 package learning;
 
-import java.util.Scanner;
-
 public class AbsoluteValue {
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Take input:");
-        int input = s.nextInt();
-
+    public int result(int input) {
+        int k ;
         if (input < 0) {
-            System.out.print("input:" + input+"output:" + (-1 * input));
+            k = (-1 * input);
+
+        } else {
+            k = input;
 
         }
-        else{
-            System.out.println("output:"+input);
-        }
+        return k;
     }
+
+    public static void main(String[] args) {
+        AbsoluteValue obj = new AbsoluteValue();
+        int z = obj.result(-8);
+        System.out.println(z);
+    }
+
+
 }
