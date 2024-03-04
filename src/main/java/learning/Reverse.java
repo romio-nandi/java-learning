@@ -1,22 +1,27 @@
 package learning;
 
-import java.util.Scanner;
-class Reverse
- {
-     public static void main (String args[])
-	 {
-	   Scanner s=new Scanner(System.in);
-	   int i =0 ;
-	   while(i <5 ){
-	   System.out.println("Enter the Number");
-	   int r= s.nextInt();
-	   while (r>0){
-	   int x=r%10;
-	   System.out.print(x +"|");
-	   r=r/10;
-	   }
-	   i++;
-	   }
+class Reverse {
+    public int getReverse(int n) {
+        int sum=0;
+        while (n > 0) {
+            int x = n % 10;
+            System.out.print(x + "|");
+            sum=(sum*10)+x;
+            n = n / 10;
+        }
+        return sum ;
+    }
 
-	   }
-	 }
+    public static void main(String[] args) {
+        Reverse reverseInstance = new Reverse();
+      int k=  reverseInstance.getReverse(786);
+       System.out.println("print the Reverse number:"+k);
+
+    }
+
+    {
+
+
+    }
+
+}
