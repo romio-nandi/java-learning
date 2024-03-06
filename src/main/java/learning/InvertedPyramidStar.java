@@ -1,15 +1,30 @@
 package learning;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class InvertedPyramidStar {
     public static void main(String[] args) {
-    for(int i= 4;i>=1;i--){
-        for(int j=0;j>=i;j--) {
-            System.out.print(" ");
+        List<String> result = pattern();
+        for(String s : result){
+            System.out.println(s);
         }
-        for(int k=0;k<i-k;k++){
-            System.out.print("*");
-        }
-        System.out.println(" ");
     }
+
+    private static List<String> pattern() {
+        List<String> result = new ArrayList<>();
+
+        for(int i= 4;i>=1;i--){
+            String s = "";
+            for(int j=0;j>=i;j--) {
+                s = s+ " ";
+            }
+            for(int k=0;k<i-k;k++){
+                s = s + "*";
+            }
+            s = s+ " ";
+            result.add(s);
+        }
+        return result;
     }
 }

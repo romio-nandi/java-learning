@@ -1,23 +1,18 @@
 package learning;
 
 public class AutomorphicNumber {
-    public static void main(String[] args) {
-        int a = 25;
-        int org = a;
-        int count = a;
-        int k = 0;
-        double z = Math.pow(a, 2);
 
-        while (a == count) {
-            k = (int) z % 10;
-            count++;
-        }
+    public boolean checkAutomorphicNumber(int a) {
+        double y = Math.pow(a, 2);
+        int len = String.valueOf(a).length();
+        double z = y % Math.pow(10, len);
+        //return a==z;
+        //return 30+5
+        // return 12/5;
+        // reatun a==z
 
-        if (k == org) {
-            System.out.println("it is automorphic");
-
-        } else {
-            System.out.println("it is not automorphic");
-        }
+        return a == z;
     }
 }
+
+
