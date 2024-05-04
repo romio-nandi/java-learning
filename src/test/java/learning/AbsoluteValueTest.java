@@ -10,7 +10,7 @@ public class AbsoluteValueTest {
     public void result() {
         AbsoluteValue obj = new AbsoluteValue();
         int z = obj.result(-8);
-        System.out.println(z);
-        assertEquals(-8,z);
+        System.out.println("print Z="+z);
+        assertEquals(8,z);
     }
 }
