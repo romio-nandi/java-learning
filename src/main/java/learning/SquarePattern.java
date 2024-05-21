@@ -8,5 +8,6 @@ public class SquarePattern {
             }
             System.out.println(" ");
         }
+
     }
 }

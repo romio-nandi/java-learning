@@ -12,9 +12,5 @@ public class FactorialNumber {
         return multi;
     }
 
-    public static void main(String[] args) {
-        FactorialNumber obj = new FactorialNumber();
-        int z = obj.returnFact(1);
-        System.out.println(z);
-    }
+
 }

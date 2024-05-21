@@ -20,7 +20,7 @@ class Triangular {
 public class RectangularTran {
     public static void main(String[] args) {
 
-        Rectangular rect = new Rectangular();
+     //   PerimeterRectangular rect = new PerimeterRectangular();
         Triangular triangular = new Triangular();
 
         int[] rectangle = {1, 2, 3, 4, 5, 6};
@@ -35,11 +35,12 @@ public class RectangularTran {
          */
 
         int sum = 0;
-        for(int i=0; i<6;i=i+2){
-            int temp = rect.area(rectangle[i], rectangle[i+1]);
-            System.out.println(temp);
-            sum = sum + temp;
+        for (int i = 0; i < 6; i = i + 2) {
+//          //  int temp = rect.area(rectangle[i], rectangle[i+1]);
+//            System.out.println(temp);
+//            sum = sum + temp;
+//        }
+            System.out.println("sum is " + sum);
         }
-        System.out.println("sum is " + sum);
     }
 }
